@@ -16,10 +16,21 @@ internal enum KeylessLastAction {
     case idle
 }
 
+enum KeylessDeviceStatus2 {
+    case idle, sent, error, sending
+}
+
 protocol KeylessDeviceDelegate {
+    // Key and seria
+    func getKey() -> String
+    func getSerial() -> Int
+    
     // Messages
     func getNextMessage() -> String?
     func removeLastMessage()
+    
+    // Actions and status
+    func status(value: KeylessDeviceStatus2)
 }
 
 
@@ -30,6 +41,8 @@ class KeylessDevice: BleDeviceDelegate {
     internal var lastAction: KeylessLastAction = .idle
     internal var timerPing: Timer?
     
+    
+    var delegate: KeylessDeviceDelegate?
     
     init(with device: BleDevice) {
         self.device = device
@@ -56,11 +69,10 @@ class KeylessDevice: BleDeviceDelegate {
         case .messages where cmd.hexString.starts(with: "ff33aa03"):
             crc = Array(cmd[4...7])
 
-            if PersistentData.shared.vehicleMessages.count > 0 {
-//            if PersistentData.shared.vehicle.value?.data?.count ?? 0 > 0 {
+            if delegate?.getNextMessage() != nil {
                 self.sendNextMessage()
             } else {
-                KeylessManager.shared.deviceStatus.accept(.idle)
+                delegate?.status(value: .idle)
                 lastAction = .idle
             }
             
@@ -74,17 +86,17 @@ class KeylessDevice: BleDeviceDelegate {
             
         case .userAction where cmd.hexString.starts(with: "ff33aa21"): // opened
             crc = Array(cmd[4...7])
-            KeylessManager.shared.commandStatus.accept(.sent)
+            delegate?.status(value: .sent)
             lastAction = .idle
 
         case .userAction where cmd.hexString.starts(with: "ff33aa22"): // closed
             crc = Array(cmd[4...7])
-            KeylessManager.shared.commandStatus.accept(.sent)
+            delegate?.status(value: .sent)
             lastAction = .idle
 
             
         case .userAction: // error
-            KeylessManager.shared.commandStatus.accept(.error)
+            delegate?.status(value: .error)
             lastAction = .idle
 
         case .ping where cmd.hexString.starts(with: "ff33ff33") :
@@ -108,7 +120,7 @@ class KeylessDevice: BleDeviceDelegate {
 
         switch lastAction {
         case .userAction:
-            KeylessManager.shared.commandStatus.accept(wasOk ? .sending : .error)
+            delegate?.status(value: wasOk ? .sending : .error)
             
         default:
             break
@@ -127,8 +139,7 @@ class KeylessDevice: BleDeviceDelegate {
             self.device.write(message: data)
             return true
         } else {
-            
-            KeylessManager.shared.commandStatus.accept(.error)
+            delegate?.status(value: .error)
         }
         return false
     }

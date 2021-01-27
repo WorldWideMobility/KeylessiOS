@@ -7,6 +7,7 @@ let package = Package(
     name: "KeylessiOS",
     platforms: [
         .iOS(.v11),
+        .macOS(.v10_14),
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.

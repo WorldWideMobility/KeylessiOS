@@ -74,7 +74,7 @@ extension KeylessDevice {
     private func prepareFrame(cmd: UInt8) -> [UInt8]? {
         // 0A 01 00 01 00 01 01
         do {
-            let currentSerial = PersistentData.shared.getSerial()
+            let currentSerial: Int = delegate?.getSerial() ?? 0
             let serialBytes: [UInt8] = [UInt8(currentSerial >> 8), UInt8(currentSerial & 0xff)]
             let t = try AESLib.encrypt(serialBytes + [cmd] + crc)
             return [0x0a] + serialBytes + t

@@ -19,8 +19,10 @@ extension KeylessManager: BleDiscoverDelegate {
         device = KeylessDevice(with: dev)
         bleDiscover.stopScan()
         
+
         if PersistentData.shared.vehicleMessages.count > 0 {
 //        if vehicle.dataMessages.count > 0 {
+
             self.deviceStatus.accept(.connecting)
             device?.sendNextMessage()
         } else {

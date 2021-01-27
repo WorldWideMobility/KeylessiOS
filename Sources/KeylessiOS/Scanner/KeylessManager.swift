@@ -33,12 +33,11 @@ public enum BluetoothState {
 
 class KeylessManager: NSObject {
     static let shared = KeylessManager()
-    let disposeBag = DisposeBag()
     
     override init() {
         super.init()
         bleDiscover.delegate = self
-        bluetoothState.bind(onNext: bluetoothStateChanged).disposed(by: disposeBag)
+//        bluetoothState.bind(onNext: bluetoothStateChanged).disposed(by: disposeBag)
     }
 
     
