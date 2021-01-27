@@ -11,7 +11,7 @@ import Foundation
 extension KeylessManager: BleDiscoverDelegate {
     
     func deviceFound() {
-        guard let vehicle = PersistentData.shared.vehicle.value, let dev = bleDiscover.connectedDevice else {
+        guard delegate?.hasVehicle == true, let dev = bleDiscover.connectedDevice else {
 //        guard let dev = bleDiscover.connectedDevice, let vehicle == PersistentData.shared.vehicle.value else {
             return
         }
@@ -20,13 +20,11 @@ extension KeylessManager: BleDiscoverDelegate {
         bleDiscover.stopScan()
         
 
-        if PersistentData.shared.vehicleMessages.count > 0 {
-//        if vehicle.dataMessages.count > 0 {
-
-            self.deviceStatus.accept(.connecting)
+        if delegate?.getNextMessage() != nil {
+            delegate?.status = .connecting
             device?.sendNextMessage()
         } else {
-            self.deviceStatus.accept(.idle)
+            delegate?.status = .idle
         }
     }
     
@@ -37,7 +35,7 @@ extension KeylessManager: BleDiscoverDelegate {
         }
         device?.disconnect()
         device = nil
-        self.deviceStatus.accept(.searching)
+        delegate?.status = .searching
         bleDiscover.scan()
     }
 }

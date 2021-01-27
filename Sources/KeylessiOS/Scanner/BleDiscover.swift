@@ -6,9 +6,8 @@
 //  Copyright © 2020 World Wide Mobility. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import CoreBluetooth
-import RxSwift
 import CoreData
 
 
@@ -29,15 +28,13 @@ class BleDiscover: NSObject {
 
     
     // Reeactive cositas
-    static let bleDeviceFound = BehaviorRelay<BleDevice?>(value: nil)
+//    static let bleDeviceFound = BehaviorRelay<BleDevice?>(value: nil)
 
-    let disposeBag = DisposeBag()
-    
     // MARK: Logic methods
     override init() {
         super.init()
         bleCM = CBCentralManager(delegate: self, queue: nil)
-        BleDiscover.bleDeviceFound.bind(onNext: deviceReady).disposed(by: disposeBag)
+//        BleDiscover.bleDeviceFound.bind(onNext: deviceReady).disposed(by: disposeBag)
         //NotificationCenter.default.addObserver(self, selector: #selector(deviceReady(_:)), name: .deviceFound, object: nil)
     }
     
@@ -59,7 +56,7 @@ class BleDiscover: NSObject {
         guard let name=deviceName, connectedDevice == nil else {
             return
         }
-        
+
         if let device = DeviceEntity.find(name: name), let uuid = device.uuid {
             deviceUUID = UUID(uuidString: uuid)
         }

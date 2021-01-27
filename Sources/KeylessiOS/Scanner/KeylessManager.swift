@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import RxSwift
 
 //enum KeylessStatus {
 //    case disconnected
@@ -40,7 +39,8 @@ class KeylessManager: NSObject {
 //        bluetoothState.bind(onNext: bluetoothStateChanged).disposed(by: disposeBag)
     }
 
-    
+    var delegate: KeylessDeviceDelegate?
+
     var bleDiscover = BleDiscover()
 
     var device: KeylessDevice? = nil
@@ -57,7 +57,7 @@ class KeylessManager: NSObject {
                 bleDiscover.scan()
             } else if oldValue != nil {
                 bleDiscover.connectedDevice = nil
-                deviceStatus.accept(.disconnected)
+                delegate?.status = .disconnected
                 bleDiscover.stopScan()
                 device?.disconnect()
                 device = nil
@@ -65,9 +65,9 @@ class KeylessManager: NSObject {
         }
     }
     
-    public var commandStatus = PublishRelay<DeviceCommandState>()
-    public var deviceStatus = BehaviorRelay<KeylessDeviceStatus>(value: .disconnected)
-    public var bluetoothState = BehaviorRelay<BluetoothState>(value: .on)
+//    public var commandStatus = PublishRelay<DeviceCommandState>()
+//    public var deviceStatus = BehaviorRelay<KeylessDeviceStatus>(value: .disconnected)
+//    public var bluetoothState = BehaviorRelay<BluetoothState>(value: .on)
     
     func bluetoothStateChanged(_ state: BluetoothState) {
         if state != .on {

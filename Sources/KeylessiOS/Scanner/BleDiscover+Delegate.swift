@@ -6,7 +6,7 @@
 //  Copyright © 2020 World Wide Mobility. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import CoreBluetooth
 
 
@@ -31,10 +31,10 @@ extension BleDiscover: CBCentralManagerDelegate {
     
     
     
-    func centralManager(_ central: CBCentralManager, connectionEventDidOccur event: CBConnectionEvent, for peripheral: CBPeripheral) {
-//        print("@@ connectionEventDidOccur", peripheral.identifier, event)
-        
-    }
+//    func centralManager(_ central: CBCentralManager, connectionEventDidOccur event: CBConnectionEvent, for peripheral: CBPeripheral) {
+// //        print("@@ connectionEventDidOccur", peripheral.identifier, event)
+//
+//    }
     
     
     func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
@@ -61,26 +61,19 @@ extension BleDiscover: CBCentralManagerDelegate {
     
     
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
-//        print("@@ centralManagerDidUpdateState", central.state)
-        
         switch central.state {
-        case .unauthorized:
-//            print("@@ BLE State: Unauthorized")
-            KeylessManager.shared.bluetoothState.accept(.unauthorized)
-            
-        case .poweredOff:
-            KeylessManager.shared.bluetoothState.accept(.off)
-//            print("@@ BLE State: Powered OFF")
-            
-        case .poweredOn:
-            KeylessManager.shared.bluetoothState.accept(.on)
-//            print("@@ BLE State: Powered ON")
-            
+//        case .unauthorized:
+//            KeylessManager.shared.bluetoothState.accept(.unauthorized)
+//
+//        case .poweredOff:
+//            KeylessManager.shared.bluetoothState.accept(.off)
+//
+//        case .poweredOn:
+//            KeylessManager.shared.bluetoothState.accept(.on)
+
         default:
             break
-//            print("@@ BLE State: other states", central.state)
         }
-        
     }
     
     

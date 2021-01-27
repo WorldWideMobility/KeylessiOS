@@ -10,7 +10,8 @@ import Foundation
 
 extension KeylessDevice {
     internal func sendNextMessage() {
-        guard let vehicle = PersistentData.shared.vehicle.value, let message = delegate?.getNextMessage() else {
+
+        guard delegate?.hasVehicle == true, let message = delegate?.getNextMessage() else {
             self.device.centralManager?.cancelPeripheralConnection(self.device.peripheral)
 //            self.disconnect()
             return

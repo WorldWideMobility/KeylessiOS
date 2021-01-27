@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CryptoSwift
 
 //
 //
@@ -74,12 +75,60 @@ extension KeylessDevice {
     private func prepareFrame(cmd: UInt8) -> [UInt8]? {
         // 0A 01 00 01 00 01 01
         do {
-            let currentSerial: Int = delegate?.getSerial() ?? 0
+            let currentSerial: Int = delegate?.serial ?? 0
             let serialBytes: [UInt8] = [UInt8(currentSerial >> 8), UInt8(currentSerial & 0xff)]
-            let t = try AESLib.encrypt(serialBytes + [cmd] + crc)
+            let t = try encrypt(serialBytes + [cmd] + crc)
             return [0x0a] + serialBytes + t
         } catch {
             return nil
         }
     }
+
+}
+
+// MARK: Crytography methods.
+extension KeylessDevice {
+    //  PersistentData.shared.vehicle?.secret
+    // PersistentData.shared.deviceUUID
+
+    func getUpdatedSecret() -> Data {
+        var s = Data(hex: delegate?.secret ?? "")
+        let m: Data = delegate?.deviceUUID.data(using: .utf8) ?? Data()
+
+        if s.count < 32 || m.count < 8 {
+            return Data()
+        }
+
+        for i in 1..<33 {
+            s[i] = s[i] ^ m[(i-1) % 8 + 2]
+        }
+
+        return s
+    }
+
+    func encrypt(_ data: [UInt8]) throws -> [UInt8] {
+        let secret = getUpdatedSecret()
+        if secret.count < 50 {
+            return []
+        }
+
+        let key = secret[1...32]
+        let iv = secret[33...48]
+        let aes = try AES(key: Array(key), blockMode: CBC(iv: Array(iv)), padding: .pkcs7)
+        return try aes.encrypt(data)
+    }
+
+    func decrypt(_ data: [UInt8]) throws -> [UInt8] {
+        let secret = getUpdatedSecret()
+        if secret.count < 50 {
+            return []
+        }
+
+        let key = secret[1...32]
+        let iv = secret[33...49]
+
+        let aes = try AES(key: Array(key), blockMode: CBC(iv: Array(iv)), padding: .pkcs7)
+        return try aes.decrypt(data)
+    }
+
 }

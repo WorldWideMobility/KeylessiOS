@@ -17,20 +17,20 @@ internal enum KeylessLastAction {
 }
 
 enum KeylessDeviceStatus2 {
-    case idle, sent, error, sending
+    case idle, sent, error, sending, connected, disconnected, connecting, searching
 }
 
 protocol KeylessDeviceDelegate {
-    // Key and seria
-    func getKey() -> String
-    func getSerial() -> Int
-    
     // Messages
     func getNextMessage() -> String?
     func removeLastMessage()
     
-    // Actions and status
-    func status(value: KeylessDeviceStatus2)
+    var status: KeylessDeviceStatus2 { get set }
+    var serial: Int { get }
+    var key: String { get }
+    var hasVehicle: Bool { get }
+    var secret: String { get }
+    var deviceUUID: String { get }
 }
 
 
@@ -72,7 +72,7 @@ class KeylessDevice: BleDeviceDelegate {
             if delegate?.getNextMessage() != nil {
                 self.sendNextMessage()
             } else {
-                delegate?.status(value: .idle)
+                delegate?.status = .idle
                 lastAction = .idle
             }
             
@@ -86,17 +86,17 @@ class KeylessDevice: BleDeviceDelegate {
             
         case .userAction where cmd.hexString.starts(with: "ff33aa21"): // opened
             crc = Array(cmd[4...7])
-            delegate?.status(value: .sent)
+            delegate?.status = .sent
             lastAction = .idle
 
         case .userAction where cmd.hexString.starts(with: "ff33aa22"): // closed
             crc = Array(cmd[4...7])
-            delegate?.status(value: .sent)
+            delegate?.status = .sent
             lastAction = .idle
 
             
         case .userAction: // error
-            delegate?.status(value: .error)
+            delegate?.status = .error
             lastAction = .idle
 
         case .ping where cmd.hexString.starts(with: "ff33ff33") :
@@ -120,7 +120,7 @@ class KeylessDevice: BleDeviceDelegate {
 
         switch lastAction {
         case .userAction:
-            delegate?.status(value: wasOk ? .sending : .error)
+            delegate?.status = wasOk ? .sending : .error
             
         default:
             break
@@ -139,7 +139,7 @@ class KeylessDevice: BleDeviceDelegate {
             self.device.write(message: data)
             return true
         } else {
-            delegate?.status(value: .error)
+            delegate?.status = .error
         }
         return false
     }

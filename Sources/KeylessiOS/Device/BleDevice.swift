@@ -149,7 +149,8 @@ class BleDevice: NSObject, CBPeripheralDelegate {
             deviceReady = deviceName != nil && deviceFilter != nil && ffe0 != nil
             
             if deviceReady {
-                BleDiscover.bleDeviceFound.accept(self)
+                // TODO: APAÑA ESTO!
+//                BleDiscover.bleDeviceFound.accept(self)
             }
         }
     }
