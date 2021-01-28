@@ -62,6 +62,9 @@ extension BleDiscover: CBCentralManagerDelegate {
     
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         switch central.state {
+        case .poweredOn:
+            print("poweredON")
+            bleCM.scanForPeripherals(withServices: nil, options: nil)
 //        case .unauthorized:
 //            KeylessManager.shared.bluetoothState.accept(.unauthorized)
 //
