@@ -30,8 +30,8 @@ public enum BluetoothState {
 
 
 
-class KeylessManager: NSObject {
-    static let shared = KeylessManager()
+public class KeylessManager: NSObject {
+    public static let shared = KeylessManager()
     
     override init() {
         super.init()
@@ -39,7 +39,7 @@ class KeylessManager: NSObject {
 //        bluetoothState.bind(onNext: bluetoothStateChanged).disposed(by: disposeBag)
     }
 
-    var delegate: KeylessDeviceDelegate?
+    public var delegate: KeylessDeviceDelegate?
 
     var bleDiscover = BleDiscover()
 
@@ -47,7 +47,7 @@ class KeylessManager: NSObject {
     
     var timerPing: Timer?
     
-    var deviceName: String? = nil {
+    public var deviceName: String? = nil {
         didSet {
 //            guard oldValue != deviceName else {
 //                return

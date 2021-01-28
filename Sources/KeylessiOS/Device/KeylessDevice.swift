@@ -9,18 +9,18 @@
 
 import Foundation
 
-internal enum KeylessLastAction {
+enum KeylessLastAction {
     case userAction
     case ping
     case messages
     case idle
 }
 
-enum KeylessDeviceStatus2 {
+public enum KeylessDeviceStatus2 {
     case idle, sent, error, sending, connected, disconnected, connecting, searching
 }
 
-protocol KeylessDeviceDelegate {
+public protocol KeylessDeviceDelegate {
     // Messages
     func getNextMessage() -> String?
     func removeLastMessage()
@@ -34,12 +34,12 @@ protocol KeylessDeviceDelegate {
 }
 
 
-class KeylessDevice: BleDeviceDelegate {
-    internal let device: BleDevice
-    internal var crc = [UInt8]()
+public class KeylessDevice: BleDeviceDelegate {
+    let device: BleDevice
+    var crc = [UInt8]()
     
-    internal var lastAction: KeylessLastAction = .idle
-    internal var timerPing: Timer?
+    var lastAction: KeylessLastAction = .idle
+    var timerPing: Timer?
     
     
     var delegate: KeylessDeviceDelegate?

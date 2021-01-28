@@ -9,7 +9,9 @@ let package = Package(
         .iOS(.v11),
         .macOS(.v10_14),
     ],
-    
+    sources: [
+        "Sources"
+    ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
