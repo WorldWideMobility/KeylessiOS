@@ -1,0 +1,1574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"KeylessiOS::KeylessiOSPackageTests::ProductTarget" /* KeylessiOSPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_242 /* Build configuration list for PBXAggregateTarget "KeylessiOSPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_245 /* PBXTargetDependency */,
+			);
+			name = KeylessiOSPackageTests;
+			productName = KeylessiOSPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		D4AC7A1125C2D9710035BD0F /* TestKeylessiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AC79FF25C2D9710035BD0F /* TestKeylessiOSApp.swift */; };
+		D4AC7A1225C2D9710035BD0F /* TestKeylessiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AC79FF25C2D9710035BD0F /* TestKeylessiOSApp.swift */; };
+		D4AC7A1325C2D9710035BD0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AC7A0025C2D9710035BD0F /* ContentView.swift */; };
+		D4AC7A1425C2D9710035BD0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AC7A0025C2D9710035BD0F /* ContentView.swift */; };
+		D4AC7A1525C2D9710035BD0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4AC7A0125C2D9710035BD0F /* Assets.xcassets */; };
+		D4AC7A1625C2D9710035BD0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4AC7A0125C2D9710035BD0F /* Assets.xcassets */; };
+		D4AC7A2625C2DB640035BD0F /* KeylessAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AC7A2525C2DB640035BD0F /* KeylessAdaptor.swift */; };
+		D4AC7A2725C2DB640035BD0F /* KeylessAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AC7A2525C2DB640035BD0F /* KeylessAdaptor.swift */; };
+		D4AC7A3125C2DDC40035BD0F /* KeylessiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "KeylessiOS::KeylessiOS::Product" /* KeylessiOS.framework */; };
+		D4AC7A3225C2DDC90035BD0F /* KeylessiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "KeylessiOS::KeylessiOS::Product" /* KeylessiOS.framework */; };
+		OBJ_128 /* AEAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* AEAD.swift */; };
+		OBJ_129 /* AEADChaCha20Poly1305.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* AEADChaCha20Poly1305.swift */; };
+		OBJ_130 /* AES.Cryptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* AES.Cryptors.swift */; };
+		OBJ_131 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* AES.swift */; };
+		OBJ_132 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Array+Extension.swift */; };
+		OBJ_133 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* Authenticator.swift */; };
+		OBJ_134 /* BatchedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* BatchedCollection.swift */; };
+		OBJ_135 /* Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* Bit.swift */; };
+		OBJ_136 /* BlockCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* BlockCipher.swift */; };
+		OBJ_137 /* BlockDecryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* BlockDecryptor.swift */; };
+		OBJ_138 /* BlockEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* BlockEncryptor.swift */; };
+		OBJ_139 /* BlockMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* BlockMode.swift */; };
+		OBJ_140 /* BlockModeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* BlockModeOptions.swift */; };
+		OBJ_141 /* CBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* CBC.swift */; };
+		OBJ_142 /* CCM.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* CCM.swift */; };
+		OBJ_143 /* CFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* CFB.swift */; };
+		OBJ_144 /* CTR.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* CTR.swift */; };
+		OBJ_145 /* CipherModeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* CipherModeWorker.swift */; };
+		OBJ_146 /* ECB.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* ECB.swift */; };
+		OBJ_147 /* GCM.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* GCM.swift */; };
+		OBJ_148 /* OCB.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* OCB.swift */; };
+		OBJ_149 /* OFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* OFB.swift */; };
+		OBJ_150 /* PCBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* PCBC.swift */; };
+		OBJ_151 /* Blowfish.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* Blowfish.swift */; };
+		OBJ_152 /* CBCMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* CBCMAC.swift */; };
+		OBJ_153 /* CMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* CMAC.swift */; };
+		OBJ_154 /* ChaCha20.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* ChaCha20.swift */; };
+		OBJ_155 /* Checksum.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* Checksum.swift */; };
+		OBJ_156 /* Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* Cipher.swift */; };
+		OBJ_157 /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* Collection+Extension.swift */; };
+		OBJ_158 /* CompactMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* CompactMap.swift */; };
+		OBJ_159 /* Cryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* Cryptor.swift */; };
+		OBJ_160 /* Cryptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* Cryptors.swift */; };
+		OBJ_161 /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* Digest.swift */; };
+		OBJ_162 /* DigestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* DigestType.swift */; };
+		OBJ_163 /* AES+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* AES+Foundation.swift */; };
+		OBJ_164 /* Array+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* Array+Foundation.swift */; };
+		OBJ_165 /* Blowfish+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* Blowfish+Foundation.swift */; };
+		OBJ_166 /* ChaCha20+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* ChaCha20+Foundation.swift */; };
+		OBJ_167 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* Data+Extension.swift */; };
+		OBJ_168 /* HMAC+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* HMAC+Foundation.swift */; };
+		OBJ_169 /* Rabbit+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* Rabbit+Foundation.swift */; };
+		OBJ_170 /* String+FoundationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* String+FoundationExtension.swift */; };
+		OBJ_171 /* Utils+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* Utils+Foundation.swift */; };
+		OBJ_172 /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* Generics.swift */; };
+		OBJ_173 /* HKDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_85 /* HKDF.swift */; };
+		OBJ_174 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_86 /* HMAC.swift */; };
+		OBJ_175 /* ISO78164Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_87 /* ISO78164Padding.swift */; };
+		OBJ_176 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* Int+Extension.swift */; };
+		OBJ_177 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_89 /* MD5.swift */; };
+		OBJ_178 /* NoPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_90 /* NoPadding.swift */; };
+		OBJ_179 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* Operators.swift */; };
+		OBJ_180 /* PBKDF1.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* PBKDF1.swift */; };
+		OBJ_181 /* PBKDF2.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_94 /* PBKDF2.swift */; };
+		OBJ_182 /* PKCS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_95 /* PKCS5.swift */; };
+		OBJ_183 /* PKCS7.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_96 /* PKCS7.swift */; };
+		OBJ_184 /* PKCS7Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_97 /* PKCS7Padding.swift */; };
+		OBJ_185 /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_98 /* Padding.swift */; };
+		OBJ_186 /* Poly1305.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_99 /* Poly1305.swift */; };
+		OBJ_187 /* Rabbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_100 /* Rabbit.swift */; };
+		OBJ_188 /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_101 /* SHA1.swift */; };
+		OBJ_189 /* SHA2.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_102 /* SHA2.swift */; };
+		OBJ_190 /* SHA3.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_103 /* SHA3.swift */; };
+		OBJ_191 /* Scrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_104 /* Scrypt.swift */; };
+		OBJ_192 /* SecureBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_105 /* SecureBytes.swift */; };
+		OBJ_193 /* StreamDecryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_106 /* StreamDecryptor.swift */; };
+		OBJ_194 /* StreamEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_107 /* StreamEncryptor.swift */; };
+		OBJ_195 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_108 /* String+Extension.swift */; };
+		OBJ_196 /* UInt128.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_109 /* UInt128.swift */; };
+		OBJ_197 /* UInt16+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_110 /* UInt16+Extension.swift */; };
+		OBJ_198 /* UInt32+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_111 /* UInt32+Extension.swift */; };
+		OBJ_199 /* UInt64+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_112 /* UInt64+Extension.swift */; };
+		OBJ_200 /* UInt8+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_113 /* UInt8+Extension.swift */; };
+		OBJ_201 /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_114 /* Updatable.swift */; };
+		OBJ_202 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_115 /* Utils.swift */; };
+		OBJ_203 /* ZeroPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_116 /* ZeroPadding.swift */; };
+		OBJ_210 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_117 /* Package.swift */; };
+		OBJ_216 /* BleDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* BleDelegates.swift */; };
+		OBJ_217 /* BleSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* BleSettings.swift */; };
+		OBJ_218 /* BleDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* BleDevice.swift */; };
+		OBJ_219 /* KeylessDevice+Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* KeylessDevice+Messages.swift */; };
+		OBJ_220 /* KeylessDevice+protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* KeylessDevice+protocol.swift */; };
+		OBJ_221 /* KeylessDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* KeylessDevice.swift */; };
+		OBJ_222 /* KeylessProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* KeylessProtocol.swift */; };
+		OBJ_223 /* Data+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Data+String.swift */; };
+		OBJ_224 /* KeylessiOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* KeylessiOS.swift */; };
+		OBJ_225 /* BleDiscover+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* BleDiscover+Delegate.swift */; };
+		OBJ_226 /* BleDiscover.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* BleDiscover.swift */; };
+		OBJ_227 /* KeylessManager+Commands.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* KeylessManager+Commands.swift */; };
+		OBJ_228 /* KeylessManager+Discovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* KeylessManager+Discovery.swift */; };
+		OBJ_229 /* KeylessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* KeylessManager.swift */; };
+		OBJ_230 /* CoreDataContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* CoreDataContext.swift */; };
+		OBJ_231 /* DeviceEntity+methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* DeviceEntity+methods.swift */; };
+		OBJ_233 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "CryptoSwift::CryptoSwift::Product" /* CryptoSwift.framework */; };
+		OBJ_240 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_251 /* KeylessiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* KeylessiOSTests.swift */; };
+		OBJ_252 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* XCTestManifests.swift */; };
+		OBJ_254 /* KeylessiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "KeylessiOS::KeylessiOS::Product" /* KeylessiOS.framework */; };
+		OBJ_255 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "CryptoSwift::CryptoSwift::Product" /* CryptoSwift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4AC79F425C2D9490035BD0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "CryptoSwift::CryptoSwift";
+			remoteInfo = CryptoSwift;
+		};
+		D4AC79F525C2D9490035BD0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "KeylessiOS::KeylessiOS";
+			remoteInfo = KeylessiOS;
+		};
+		D4AC79F625C2D9490035BD0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "CryptoSwift::CryptoSwift";
+			remoteInfo = CryptoSwift;
+		};
+		D4AC79FB25C2D94A0035BD0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "KeylessiOS::KeylessiOSTests";
+			remoteInfo = KeylessiOSTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		"CryptoSwift::CryptoSwift::Product" /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4AC79FF25C2D9710035BD0F /* TestKeylessiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestKeylessiOSApp.swift; sourceTree = "<group>"; };
+		D4AC7A0025C2D9710035BD0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D4AC7A0125C2D9710035BD0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4AC7A0625C2D9710035BD0F /* TestKeylessiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestKeylessiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4AC7A0825C2D9710035BD0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4AC7A0D25C2D9710035BD0F /* TestKeylessiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestKeylessiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4AC7A0F25C2D9710035BD0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4AC7A1025C2D9710035BD0F /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		D4AC7A2525C2DB640035BD0F /* KeylessAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeylessAdaptor.swift; sourceTree = "<group>"; };
+		"KeylessiOS::KeylessiOS::Product" /* KeylessiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KeylessiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"KeylessiOS::KeylessiOSTests::Product" /* KeylessiOSTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = KeylessiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_10 /* BleDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleDelegates.swift; sourceTree = "<group>"; };
+		OBJ_100 /* Rabbit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rabbit.swift; sourceTree = "<group>"; };
+		OBJ_101 /* SHA1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA1.swift; sourceTree = "<group>"; };
+		OBJ_102 /* SHA2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA2.swift; sourceTree = "<group>"; };
+		OBJ_103 /* SHA3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA3.swift; sourceTree = "<group>"; };
+		OBJ_104 /* Scrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scrypt.swift; sourceTree = "<group>"; };
+		OBJ_105 /* SecureBytes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureBytes.swift; sourceTree = "<group>"; };
+		OBJ_106 /* StreamDecryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamDecryptor.swift; sourceTree = "<group>"; };
+		OBJ_107 /* StreamEncryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamEncryptor.swift; sourceTree = "<group>"; };
+		OBJ_108 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		OBJ_109 /* UInt128.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInt128.swift; sourceTree = "<group>"; };
+		OBJ_11 /* BleSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleSettings.swift; sourceTree = "<group>"; };
+		OBJ_110 /* UInt16+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt16+Extension.swift"; sourceTree = "<group>"; };
+		OBJ_111 /* UInt32+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt32+Extension.swift"; sourceTree = "<group>"; };
+		OBJ_112 /* UInt64+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt64+Extension.swift"; sourceTree = "<group>"; };
+		OBJ_113 /* UInt8+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt8+Extension.swift"; sourceTree = "<group>"; };
+		OBJ_114 /* Updatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updatable.swift; sourceTree = "<group>"; };
+		OBJ_115 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		OBJ_116 /* ZeroPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroPadding.swift; sourceTree = "<group>"; };
+		OBJ_117 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/ucotta/Working/KeylessiOS/.build/checkouts/CryptoSwift/Package.swift; sourceTree = "<group>"; };
+		OBJ_122 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_13 /* BleDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleDevice.swift; sourceTree = "<group>"; };
+		OBJ_14 /* KeylessDevice+Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeylessDevice+Messages.swift"; sourceTree = "<group>"; };
+		OBJ_15 /* KeylessDevice+protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeylessDevice+protocol.swift"; sourceTree = "<group>"; };
+		OBJ_16 /* KeylessDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeylessDevice.swift; sourceTree = "<group>"; };
+		OBJ_17 /* KeylessProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeylessProtocol.swift; sourceTree = "<group>"; };
+		OBJ_19 /* Data+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+String.swift"; sourceTree = "<group>"; };
+		OBJ_20 /* KeylessiOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeylessiOS.swift; sourceTree = "<group>"; };
+		OBJ_22 /* BleDiscover+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BleDiscover+Delegate.swift"; sourceTree = "<group>"; };
+		OBJ_23 /* BleDiscover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleDiscover.swift; sourceTree = "<group>"; };
+		OBJ_24 /* KeylessManager+Commands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeylessManager+Commands.swift"; sourceTree = "<group>"; };
+		OBJ_25 /* KeylessManager+Discovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeylessManager+Discovery.swift"; sourceTree = "<group>"; };
+		OBJ_26 /* KeylessManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeylessManager.swift; sourceTree = "<group>"; };
+		OBJ_28 /* CoreDataContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataContext.swift; sourceTree = "<group>"; };
+		OBJ_29 /* DeviceEntity+methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeviceEntity+methods.swift"; sourceTree = "<group>"; };
+		OBJ_32 /* KeylessiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeylessiOSTests.swift; sourceTree = "<group>"; };
+		OBJ_33 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_38 /* AEAD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEAD.swift; sourceTree = "<group>"; };
+		OBJ_39 /* AEADChaCha20Poly1305.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEADChaCha20Poly1305.swift; sourceTree = "<group>"; };
+		OBJ_40 /* AES.Cryptors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES.Cryptors.swift; sourceTree = "<group>"; };
+		OBJ_41 /* AES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
+		OBJ_42 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		OBJ_43 /* Authenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
+		OBJ_44 /* BatchedCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchedCollection.swift; sourceTree = "<group>"; };
+		OBJ_45 /* Bit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bit.swift; sourceTree = "<group>"; };
+		OBJ_46 /* BlockCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockCipher.swift; sourceTree = "<group>"; };
+		OBJ_47 /* BlockDecryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockDecryptor.swift; sourceTree = "<group>"; };
+		OBJ_48 /* BlockEncryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockEncryptor.swift; sourceTree = "<group>"; };
+		OBJ_50 /* BlockMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockMode.swift; sourceTree = "<group>"; };
+		OBJ_51 /* BlockModeOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockModeOptions.swift; sourceTree = "<group>"; };
+		OBJ_52 /* CBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBC.swift; sourceTree = "<group>"; };
+		OBJ_53 /* CCM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCM.swift; sourceTree = "<group>"; };
+		OBJ_54 /* CFB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFB.swift; sourceTree = "<group>"; };
+		OBJ_55 /* CTR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTR.swift; sourceTree = "<group>"; };
+		OBJ_56 /* CipherModeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CipherModeWorker.swift; sourceTree = "<group>"; };
+		OBJ_57 /* ECB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECB.swift; sourceTree = "<group>"; };
+		OBJ_58 /* GCM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCM.swift; sourceTree = "<group>"; };
+		OBJ_59 /* OCB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCB.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_60 /* OFB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OFB.swift; sourceTree = "<group>"; };
+		OBJ_61 /* PCBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCBC.swift; sourceTree = "<group>"; };
+		OBJ_62 /* Blowfish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blowfish.swift; sourceTree = "<group>"; };
+		OBJ_63 /* CBCMAC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBCMAC.swift; sourceTree = "<group>"; };
+		OBJ_64 /* CMAC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMAC.swift; sourceTree = "<group>"; };
+		OBJ_65 /* ChaCha20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaCha20.swift; sourceTree = "<group>"; };
+		OBJ_66 /* Checksum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checksum.swift; sourceTree = "<group>"; };
+		OBJ_67 /* Cipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cipher.swift; sourceTree = "<group>"; };
+		OBJ_68 /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
+		OBJ_69 /* CompactMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactMap.swift; sourceTree = "<group>"; };
+		OBJ_70 /* Cryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptor.swift; sourceTree = "<group>"; };
+		OBJ_71 /* Cryptors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptors.swift; sourceTree = "<group>"; };
+		OBJ_72 /* Digest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digest.swift; sourceTree = "<group>"; };
+		OBJ_73 /* DigestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigestType.swift; sourceTree = "<group>"; };
+		OBJ_75 /* AES+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AES+Foundation.swift"; sourceTree = "<group>"; };
+		OBJ_76 /* Array+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Foundation.swift"; sourceTree = "<group>"; };
+		OBJ_77 /* Blowfish+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Blowfish+Foundation.swift"; sourceTree = "<group>"; };
+		OBJ_78 /* ChaCha20+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChaCha20+Foundation.swift"; sourceTree = "<group>"; };
+		OBJ_79 /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		OBJ_80 /* HMAC+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HMAC+Foundation.swift"; sourceTree = "<group>"; };
+		OBJ_81 /* Rabbit+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rabbit+Foundation.swift"; sourceTree = "<group>"; };
+		OBJ_82 /* String+FoundationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+FoundationExtension.swift"; sourceTree = "<group>"; };
+		OBJ_83 /* Utils+Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Utils+Foundation.swift"; sourceTree = "<group>"; };
+		OBJ_84 /* Generics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generics.swift; sourceTree = "<group>"; };
+		OBJ_85 /* HKDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKDF.swift; sourceTree = "<group>"; };
+		OBJ_86 /* HMAC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
+		OBJ_87 /* ISO78164Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO78164Padding.swift; sourceTree = "<group>"; };
+		OBJ_88 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		OBJ_89 /* MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
+		OBJ_90 /* NoPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoPadding.swift; sourceTree = "<group>"; };
+		OBJ_91 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		OBJ_93 /* PBKDF1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBKDF1.swift; sourceTree = "<group>"; };
+		OBJ_94 /* PBKDF2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBKDF2.swift; sourceTree = "<group>"; };
+		OBJ_95 /* PKCS5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKCS5.swift; sourceTree = "<group>"; };
+		OBJ_96 /* PKCS7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKCS7.swift; sourceTree = "<group>"; };
+		OBJ_97 /* PKCS7Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKCS7Padding.swift; sourceTree = "<group>"; };
+		OBJ_98 /* Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padding.swift; sourceTree = "<group>"; };
+		OBJ_99 /* Poly1305.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poly1305.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4AC7A0325C2D9710035BD0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4AC7A3125C2DDC40035BD0F /* KeylessiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4AC7A0A25C2D9710035BD0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4AC7A3225C2DDC90035BD0F /* KeylessiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_204 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_232 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_233 /* CryptoSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_253 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_254 /* KeylessiOS.framework in Frameworks */,
+				OBJ_255 /* CryptoSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4AC79FE25C2D9710035BD0F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D4AC79FF25C2D9710035BD0F /* TestKeylessiOSApp.swift */,
+				D4AC7A0025C2D9710035BD0F /* ContentView.swift */,
+				D4AC7A0125C2D9710035BD0F /* Assets.xcassets */,
+				D4AC7A2525C2DB640035BD0F /* KeylessAdaptor.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D4AC7A0725C2D9710035BD0F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D4AC7A0825C2D9710035BD0F /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		D4AC7A0E25C2D9710035BD0F /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				D4AC7A0F25C2D9710035BD0F /* Info.plist */,
+				D4AC7A1025C2D9710035BD0F /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		D4AC7A3025C2DDC40035BD0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		OBJ_118 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"KeylessiOS::KeylessiOS::Product" /* KeylessiOS.framework */,
+				"CryptoSwift::CryptoSwift::Product" /* CryptoSwift.framework */,
+				"KeylessiOS::KeylessiOSTests::Product" /* KeylessiOSTests.xctest */,
+				D4AC7A0625C2D9710035BD0F /* TestKeylessiOS.app */,
+				D4AC7A0D25C2D9710035BD0F /* TestKeylessiOS.app */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_12 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_13 /* BleDevice.swift */,
+				OBJ_14 /* KeylessDevice+Messages.swift */,
+				OBJ_15 /* KeylessDevice+protocol.swift */,
+				OBJ_16 /* KeylessDevice.swift */,
+				OBJ_17 /* KeylessProtocol.swift */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		OBJ_18 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_19 /* Data+String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		OBJ_21 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_22 /* BleDiscover+Delegate.swift */,
+				OBJ_23 /* BleDiscover.swift */,
+				OBJ_24 /* KeylessManager+Commands.swift */,
+				OBJ_25 /* KeylessManager+Discovery.swift */,
+				OBJ_26 /* KeylessManager.swift */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		OBJ_27 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_28 /* CoreDataContext.swift */,
+				OBJ_29 /* DeviceEntity+methods.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		OBJ_30 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_31 /* KeylessiOSTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_31 /* KeylessiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_32 /* KeylessiOSTests.swift */,
+				OBJ_33 /* XCTestManifests.swift */,
+			);
+			name = KeylessiOSTests;
+			path = Tests/KeylessiOSTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_34 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_35 /* CryptoSwift 1.3.8 */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_35 /* CryptoSwift 1.3.8 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_36 /* CryptoSwift */,
+				OBJ_117 /* Package.swift */,
+			);
+			name = "CryptoSwift 1.3.8";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_36 /* CryptoSwift */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_37 /* AEAD */,
+				OBJ_40 /* AES.Cryptors.swift */,
+				OBJ_41 /* AES.swift */,
+				OBJ_42 /* Array+Extension.swift */,
+				OBJ_43 /* Authenticator.swift */,
+				OBJ_44 /* BatchedCollection.swift */,
+				OBJ_45 /* Bit.swift */,
+				OBJ_46 /* BlockCipher.swift */,
+				OBJ_47 /* BlockDecryptor.swift */,
+				OBJ_48 /* BlockEncryptor.swift */,
+				OBJ_49 /* BlockMode */,
+				OBJ_62 /* Blowfish.swift */,
+				OBJ_63 /* CBCMAC.swift */,
+				OBJ_64 /* CMAC.swift */,
+				OBJ_65 /* ChaCha20.swift */,
+				OBJ_66 /* Checksum.swift */,
+				OBJ_67 /* Cipher.swift */,
+				OBJ_68 /* Collection+Extension.swift */,
+				OBJ_69 /* CompactMap.swift */,
+				OBJ_70 /* Cryptor.swift */,
+				OBJ_71 /* Cryptors.swift */,
+				OBJ_72 /* Digest.swift */,
+				OBJ_73 /* DigestType.swift */,
+				OBJ_74 /* Foundation */,
+				OBJ_84 /* Generics.swift */,
+				OBJ_85 /* HKDF.swift */,
+				OBJ_86 /* HMAC.swift */,
+				OBJ_87 /* ISO78164Padding.swift */,
+				OBJ_88 /* Int+Extension.swift */,
+				OBJ_89 /* MD5.swift */,
+				OBJ_90 /* NoPadding.swift */,
+				OBJ_91 /* Operators.swift */,
+				OBJ_92 /* PKCS */,
+				OBJ_98 /* Padding.swift */,
+				OBJ_99 /* Poly1305.swift */,
+				OBJ_100 /* Rabbit.swift */,
+				OBJ_101 /* SHA1.swift */,
+				OBJ_102 /* SHA2.swift */,
+				OBJ_103 /* SHA3.swift */,
+				OBJ_104 /* Scrypt.swift */,
+				OBJ_105 /* SecureBytes.swift */,
+				OBJ_106 /* StreamDecryptor.swift */,
+				OBJ_107 /* StreamEncryptor.swift */,
+				OBJ_108 /* String+Extension.swift */,
+				OBJ_109 /* UInt128.swift */,
+				OBJ_110 /* UInt16+Extension.swift */,
+				OBJ_111 /* UInt32+Extension.swift */,
+				OBJ_112 /* UInt64+Extension.swift */,
+				OBJ_113 /* UInt8+Extension.swift */,
+				OBJ_114 /* Updatable.swift */,
+				OBJ_115 /* Utils.swift */,
+				OBJ_116 /* ZeroPadding.swift */,
+			);
+			name = CryptoSwift;
+			path = .build/checkouts/CryptoSwift/Sources/CryptoSwift;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_37 /* AEAD */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_38 /* AEAD.swift */,
+				OBJ_39 /* AEADChaCha20Poly1305.swift */,
+			);
+			path = AEAD;
+			sourceTree = "<group>";
+		};
+		OBJ_49 /* BlockMode */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_50 /* BlockMode.swift */,
+				OBJ_51 /* BlockModeOptions.swift */,
+				OBJ_52 /* CBC.swift */,
+				OBJ_53 /* CCM.swift */,
+				OBJ_54 /* CFB.swift */,
+				OBJ_55 /* CTR.swift */,
+				OBJ_56 /* CipherModeWorker.swift */,
+				OBJ_57 /* ECB.swift */,
+				OBJ_58 /* GCM.swift */,
+				OBJ_59 /* OCB.swift */,
+				OBJ_60 /* OFB.swift */,
+				OBJ_61 /* PCBC.swift */,
+			);
+			path = BlockMode;
+			sourceTree = "<group>";
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				D4AC79FE25C2D9710035BD0F /* Shared */,
+				D4AC7A0725C2D9710035BD0F /* iOS */,
+				D4AC7A0E25C2D9710035BD0F /* macOS */,
+				OBJ_118 /* Products */,
+				OBJ_122 /* README.md */,
+				OBJ_30 /* Tests */,
+				OBJ_34 /* Dependencies */,
+				D4AC7A3025C2DDC40035BD0F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* KeylessiOS */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_74 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_75 /* AES+Foundation.swift */,
+				OBJ_76 /* Array+Foundation.swift */,
+				OBJ_77 /* Blowfish+Foundation.swift */,
+				OBJ_78 /* ChaCha20+Foundation.swift */,
+				OBJ_79 /* Data+Extension.swift */,
+				OBJ_80 /* HMAC+Foundation.swift */,
+				OBJ_81 /* Rabbit+Foundation.swift */,
+				OBJ_82 /* String+FoundationExtension.swift */,
+				OBJ_83 /* Utils+Foundation.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		OBJ_8 /* KeylessiOS */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Bluetooth */,
+				OBJ_12 /* Device */,
+				OBJ_18 /* Extensions */,
+				OBJ_20 /* KeylessiOS.swift */,
+				OBJ_21 /* Scanner */,
+				OBJ_27 /* models */,
+			);
+			name = KeylessiOS;
+			path = Sources/KeylessiOS;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_9 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_10 /* BleDelegates.swift */,
+				OBJ_11 /* BleSettings.swift */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		OBJ_92 /* PKCS */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_93 /* PBKDF1.swift */,
+				OBJ_94 /* PBKDF2.swift */,
+				OBJ_95 /* PKCS5.swift */,
+				OBJ_96 /* PKCS7.swift */,
+				OBJ_97 /* PKCS7Padding.swift */,
+			);
+			path = PKCS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"CryptoSwift::CryptoSwift" /* CryptoSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_124 /* Build configuration list for PBXNativeTarget "CryptoSwift" */;
+			buildPhases = (
+				OBJ_127 /* Sources */,
+				OBJ_204 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoSwift;
+			productName = CryptoSwift;
+			productReference = "CryptoSwift::CryptoSwift::Product" /* CryptoSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"CryptoSwift::SwiftPMPackageDescription" /* CryptoSwiftPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_206 /* Build configuration list for PBXNativeTarget "CryptoSwiftPackageDescription" */;
+			buildPhases = (
+				OBJ_209 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoSwiftPackageDescription;
+			productName = CryptoSwiftPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		D4AC7A0525C2D9710035BD0F /* TestKeylessiOS (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4AC7A1B25C2D9710035BD0F /* Build configuration list for PBXNativeTarget "TestKeylessiOS (iOS)" */;
+			buildPhases = (
+				D4AC7A0225C2D9710035BD0F /* Sources */,
+				D4AC7A0325C2D9710035BD0F /* Frameworks */,
+				D4AC7A0425C2D9710035BD0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TestKeylessiOS (iOS)";
+			productName = "TestKeylessiOS (iOS)";
+			productReference = D4AC7A0625C2D9710035BD0F /* TestKeylessiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4AC7A0C25C2D9710035BD0F /* TestKeylessiOS (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4AC7A1C25C2D9710035BD0F /* Build configuration list for PBXNativeTarget "TestKeylessiOS (macOS)" */;
+			buildPhases = (
+				D4AC7A0925C2D9710035BD0F /* Sources */,
+				D4AC7A0A25C2D9710035BD0F /* Frameworks */,
+				D4AC7A0B25C2D9710035BD0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TestKeylessiOS (macOS)";
+			productName = "TestKeylessiOS (macOS)";
+			productReference = D4AC7A0D25C2D9710035BD0F /* TestKeylessiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		"KeylessiOS::KeylessiOS" /* KeylessiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_212 /* Build configuration list for PBXNativeTarget "KeylessiOS" */;
+			buildPhases = (
+				OBJ_215 /* Sources */,
+				OBJ_232 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_234 /* PBXTargetDependency */,
+			);
+			name = KeylessiOS;
+			productName = KeylessiOS;
+			productReference = "KeylessiOS::KeylessiOS::Product" /* KeylessiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"KeylessiOS::KeylessiOSTests" /* KeylessiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_247 /* Build configuration list for PBXNativeTarget "KeylessiOSTests" */;
+			buildPhases = (
+				OBJ_250 /* Sources */,
+				OBJ_253 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_256 /* PBXTargetDependency */,
+				OBJ_257 /* PBXTargetDependency */,
+			);
+			name = KeylessiOSTests;
+			productName = KeylessiOSTests;
+			productReference = "KeylessiOS::KeylessiOSTests::Product" /* KeylessiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"KeylessiOS::SwiftPMPackageDescription" /* KeylessiOSPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_236 /* Build configuration list for PBXNativeTarget "KeylessiOSPackageDescription" */;
+			buildPhases = (
+				OBJ_239 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeylessiOSPackageDescription;
+			productName = KeylessiOSPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					D4AC7A0525C2D9710035BD0F = {
+						CreatedOnToolsVersion = 12.4;
+						DevelopmentTeam = 73ES7Y5EEY;
+						ProvisioningStyle = Automatic;
+					};
+					D4AC7A0C25C2D9710035BD0F = {
+						CreatedOnToolsVersion = 12.4;
+						DevelopmentTeam = 73ES7Y5EEY;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "KeylessiOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5;
+			productRefGroup = OBJ_118 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"CryptoSwift::CryptoSwift" /* CryptoSwift */,
+				"CryptoSwift::SwiftPMPackageDescription" /* CryptoSwiftPackageDescription */,
+				"KeylessiOS::KeylessiOS" /* KeylessiOS */,
+				"KeylessiOS::SwiftPMPackageDescription" /* KeylessiOSPackageDescription */,
+				"KeylessiOS::KeylessiOSPackageTests::ProductTarget" /* KeylessiOSPackageTests */,
+				"KeylessiOS::KeylessiOSTests" /* KeylessiOSTests */,
+				D4AC7A0525C2D9710035BD0F /* TestKeylessiOS (iOS) */,
+				D4AC7A0C25C2D9710035BD0F /* TestKeylessiOS (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4AC7A0425C2D9710035BD0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4AC7A1525C2D9710035BD0F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4AC7A0B25C2D9710035BD0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4AC7A1625C2D9710035BD0F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4AC7A0225C2D9710035BD0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4AC7A2625C2DB640035BD0F /* KeylessAdaptor.swift in Sources */,
+				D4AC7A1325C2D9710035BD0F /* ContentView.swift in Sources */,
+				D4AC7A1125C2D9710035BD0F /* TestKeylessiOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4AC7A0925C2D9710035BD0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4AC7A2725C2DB640035BD0F /* KeylessAdaptor.swift in Sources */,
+				D4AC7A1425C2D9710035BD0F /* ContentView.swift in Sources */,
+				D4AC7A1225C2D9710035BD0F /* TestKeylessiOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_127 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_128 /* AEAD.swift in Sources */,
+				OBJ_129 /* AEADChaCha20Poly1305.swift in Sources */,
+				OBJ_130 /* AES.Cryptors.swift in Sources */,
+				OBJ_131 /* AES.swift in Sources */,
+				OBJ_132 /* Array+Extension.swift in Sources */,
+				OBJ_133 /* Authenticator.swift in Sources */,
+				OBJ_134 /* BatchedCollection.swift in Sources */,
+				OBJ_135 /* Bit.swift in Sources */,
+				OBJ_136 /* BlockCipher.swift in Sources */,
+				OBJ_137 /* BlockDecryptor.swift in Sources */,
+				OBJ_138 /* BlockEncryptor.swift in Sources */,
+				OBJ_139 /* BlockMode.swift in Sources */,
+				OBJ_140 /* BlockModeOptions.swift in Sources */,
+				OBJ_141 /* CBC.swift in Sources */,
+				OBJ_142 /* CCM.swift in Sources */,
+				OBJ_143 /* CFB.swift in Sources */,
+				OBJ_144 /* CTR.swift in Sources */,
+				OBJ_145 /* CipherModeWorker.swift in Sources */,
+				OBJ_146 /* ECB.swift in Sources */,
+				OBJ_147 /* GCM.swift in Sources */,
+				OBJ_148 /* OCB.swift in Sources */,
+				OBJ_149 /* OFB.swift in Sources */,
+				OBJ_150 /* PCBC.swift in Sources */,
+				OBJ_151 /* Blowfish.swift in Sources */,
+				OBJ_152 /* CBCMAC.swift in Sources */,
+				OBJ_153 /* CMAC.swift in Sources */,
+				OBJ_154 /* ChaCha20.swift in Sources */,
+				OBJ_155 /* Checksum.swift in Sources */,
+				OBJ_156 /* Cipher.swift in Sources */,
+				OBJ_157 /* Collection+Extension.swift in Sources */,
+				OBJ_158 /* CompactMap.swift in Sources */,
+				OBJ_159 /* Cryptor.swift in Sources */,
+				OBJ_160 /* Cryptors.swift in Sources */,
+				OBJ_161 /* Digest.swift in Sources */,
+				OBJ_162 /* DigestType.swift in Sources */,
+				OBJ_163 /* AES+Foundation.swift in Sources */,
+				OBJ_164 /* Array+Foundation.swift in Sources */,
+				OBJ_165 /* Blowfish+Foundation.swift in Sources */,
+				OBJ_166 /* ChaCha20+Foundation.swift in Sources */,
+				OBJ_167 /* Data+Extension.swift in Sources */,
+				OBJ_168 /* HMAC+Foundation.swift in Sources */,
+				OBJ_169 /* Rabbit+Foundation.swift in Sources */,
+				OBJ_170 /* String+FoundationExtension.swift in Sources */,
+				OBJ_171 /* Utils+Foundation.swift in Sources */,
+				OBJ_172 /* Generics.swift in Sources */,
+				OBJ_173 /* HKDF.swift in Sources */,
+				OBJ_174 /* HMAC.swift in Sources */,
+				OBJ_175 /* ISO78164Padding.swift in Sources */,
+				OBJ_176 /* Int+Extension.swift in Sources */,
+				OBJ_177 /* MD5.swift in Sources */,
+				OBJ_178 /* NoPadding.swift in Sources */,
+				OBJ_179 /* Operators.swift in Sources */,
+				OBJ_180 /* PBKDF1.swift in Sources */,
+				OBJ_181 /* PBKDF2.swift in Sources */,
+				OBJ_182 /* PKCS5.swift in Sources */,
+				OBJ_183 /* PKCS7.swift in Sources */,
+				OBJ_184 /* PKCS7Padding.swift in Sources */,
+				OBJ_185 /* Padding.swift in Sources */,
+				OBJ_186 /* Poly1305.swift in Sources */,
+				OBJ_187 /* Rabbit.swift in Sources */,
+				OBJ_188 /* SHA1.swift in Sources */,
+				OBJ_189 /* SHA2.swift in Sources */,
+				OBJ_190 /* SHA3.swift in Sources */,
+				OBJ_191 /* Scrypt.swift in Sources */,
+				OBJ_192 /* SecureBytes.swift in Sources */,
+				OBJ_193 /* StreamDecryptor.swift in Sources */,
+				OBJ_194 /* StreamEncryptor.swift in Sources */,
+				OBJ_195 /* String+Extension.swift in Sources */,
+				OBJ_196 /* UInt128.swift in Sources */,
+				OBJ_197 /* UInt16+Extension.swift in Sources */,
+				OBJ_198 /* UInt32+Extension.swift in Sources */,
+				OBJ_199 /* UInt64+Extension.swift in Sources */,
+				OBJ_200 /* UInt8+Extension.swift in Sources */,
+				OBJ_201 /* Updatable.swift in Sources */,
+				OBJ_202 /* Utils.swift in Sources */,
+				OBJ_203 /* ZeroPadding.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_210 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_216 /* BleDelegates.swift in Sources */,
+				OBJ_217 /* BleSettings.swift in Sources */,
+				OBJ_218 /* BleDevice.swift in Sources */,
+				OBJ_219 /* KeylessDevice+Messages.swift in Sources */,
+				OBJ_220 /* KeylessDevice+protocol.swift in Sources */,
+				OBJ_221 /* KeylessDevice.swift in Sources */,
+				OBJ_222 /* KeylessProtocol.swift in Sources */,
+				OBJ_223 /* Data+String.swift in Sources */,
+				OBJ_224 /* KeylessiOS.swift in Sources */,
+				OBJ_225 /* BleDiscover+Delegate.swift in Sources */,
+				OBJ_226 /* BleDiscover.swift in Sources */,
+				OBJ_227 /* KeylessManager+Commands.swift in Sources */,
+				OBJ_228 /* KeylessManager+Discovery.swift in Sources */,
+				OBJ_229 /* KeylessManager.swift in Sources */,
+				OBJ_230 /* CoreDataContext.swift in Sources */,
+				OBJ_231 /* DeviceEntity+methods.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_239 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_240 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_251 /* KeylessiOSTests.swift in Sources */,
+				OBJ_252 /* XCTestManifests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_234 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "CryptoSwift::CryptoSwift" /* CryptoSwift */;
+			targetProxy = D4AC79F425C2D9490035BD0F /* PBXContainerItemProxy */;
+		};
+		OBJ_245 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "KeylessiOS::KeylessiOSTests" /* KeylessiOSTests */;
+			targetProxy = D4AC79FB25C2D94A0035BD0F /* PBXContainerItemProxy */;
+		};
+		OBJ_256 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "KeylessiOS::KeylessiOS" /* KeylessiOS */;
+			targetProxy = D4AC79F525C2D9490035BD0F /* PBXContainerItemProxy */;
+		};
+		OBJ_257 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "CryptoSwift::CryptoSwift" /* CryptoSwift */;
+			targetProxy = D4AC79F625C2D9490035BD0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D4AC7A1725C2D9710035BD0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73ES7Y5EEY;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.worldwidemobility.TestKeylessiOS;
+				PRODUCT_NAME = TestKeylessiOS;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4AC7A1825C2D9710035BD0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 73ES7Y5EEY;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.worldwidemobility.TestKeylessiOS;
+				PRODUCT_NAME = TestKeylessiOS;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4AC7A1925C2D9710035BD0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 73ES7Y5EEY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.worldwidemobility.TestKeylessiOS;
+				PRODUCT_NAME = TestKeylessiOS;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D4AC7A1A25C2D9710035BD0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 73ES7Y5EEY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.worldwidemobility.TestKeylessiOS;
+				PRODUCT_NAME = TestKeylessiOS;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KeylessiOS.xcodeproj/CryptoSwift_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CryptoSwift;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = CryptoSwift;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KeylessiOS.xcodeproj/CryptoSwift_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CryptoSwift;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = CryptoSwift;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_207 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_208 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KeylessiOS.xcodeproj/KeylessiOS_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = KeylessiOS;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = KeylessiOS;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KeylessiOS.xcodeproj/KeylessiOS_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = KeylessiOS;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = KeylessiOS;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_243 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_248 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KeylessiOS.xcodeproj/KeylessiOSTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = KeylessiOSTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KeylessiOS.xcodeproj/KeylessiOSTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = KeylessiOSTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4AC7A1B25C2D9710035BD0F /* Build configuration list for PBXNativeTarget "TestKeylessiOS (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4AC7A1725C2D9710035BD0F /* Debug */,
+				D4AC7A1825C2D9710035BD0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4AC7A1C25C2D9710035BD0F /* Build configuration list for PBXNativeTarget "TestKeylessiOS (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4AC7A1925C2D9710035BD0F /* Debug */,
+				D4AC7A1A25C2D9710035BD0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_124 /* Build configuration list for PBXNativeTarget "CryptoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_125 /* Debug */,
+				OBJ_126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "KeylessiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_206 /* Build configuration list for PBXNativeTarget "CryptoSwiftPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_207 /* Debug */,
+				OBJ_208 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_212 /* Build configuration list for PBXNativeTarget "KeylessiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_213 /* Debug */,
+				OBJ_214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_236 /* Build configuration list for PBXNativeTarget "KeylessiOSPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_237 /* Debug */,
+				OBJ_238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_242 /* Build configuration list for PBXAggregateTarget "KeylessiOSPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_243 /* Debug */,
+				OBJ_244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_247 /* Build configuration list for PBXNativeTarget "KeylessiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_248 /* Debug */,
+				OBJ_249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
