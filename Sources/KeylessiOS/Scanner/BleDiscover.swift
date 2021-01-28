@@ -69,7 +69,8 @@ class BleDiscover: NSObject {
             self.restartScan()
         })
         
-        bleCM.scanForPeripherals(withServices: [BleUUID.serviceUUID], options: nil)
+        bleCM.scanForPeripherals(withServices: nil, options: nil)
+//        bleCM.scanForPeripherals(withServices: [BleUUID.serviceUUID], options: nil)
         bleCM.retrieveConnectedPeripherals(withServices: [BleUUID.serviceUUID]).forEach { (peripheral) in
             self.centralManager(self.bleCM, didDiscover: peripheral, advertisementData: [:], rssi: 0)
         }
